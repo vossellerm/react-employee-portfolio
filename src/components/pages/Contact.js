@@ -1,6 +1,12 @@
 import React from "react";
 
 export default function Contact() {
+  // check name input for valid entry (text), throw error/message to client
+
+  // check email input for valid entry (email), throw error/message to client
+
+  // check message input for valid entry (text), throw error/message to client
+
   return (
     <div>
       <h1>Contact</h1>
@@ -36,6 +42,11 @@ export default function Contact() {
             id="exampleFormControlTextarea1"
             rows="3"
           ></textarea>
+        </div>
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary mb-3">
+            Submit
+          </button>
         </div>
       </div>
     </div>
