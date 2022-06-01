@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const styles = {
   card: {
     width: "25rem",
