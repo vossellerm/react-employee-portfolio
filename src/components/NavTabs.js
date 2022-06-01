@@ -1,5 +1,14 @@
 import React from "react";
 
+const styles = {
+  active: {
+    color: "red",
+  },
+  inactive: {
+    color: "blue",
+  },
+};
+
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <nav class="navbar navbar-expand-lg ">
@@ -14,6 +23,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             className={
               currentPage === "AboutMe" ? "nav-link active" : "nav-link"
             }
+            style={currentPage === "AboutMe" ? styles.active : styles.inactive}
           >
             About Me
           </a>
@@ -24,6 +34,9 @@ function NavTabs({ currentPage, handlePageChange }) {
             onClick={() => handlePageChange("Portfolio")}
             className={
               currentPage === "Portfolio" ? "nav-link active" : "nav-link"
+            }
+            style={
+              currentPage === "Portfolio" ? styles.active : styles.inactive
             }
           >
             Portfolio
@@ -36,6 +49,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             className={
               currentPage === "Contact" ? "nav-link active" : "nav-link"
             }
+            style={currentPage === "Contact" ? styles.active : styles.inactive}
           >
             Contact
           </a>
@@ -47,6 +61,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             className={
               currentPage === "Resume" ? "nav-link active" : "nav-link"
             }
+            style={currentPage === "Resume" ? styles.active : styles.inactive}
           >
             Resume
           </a>
