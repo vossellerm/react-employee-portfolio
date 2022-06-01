@@ -1,5 +1,7 @@
 import React from "react";
 
+import { validateEmail } from "../../utils/helpers";
+
 export default function Contact() {
   // check name input for valid entry (text), throw error/message to client
 
