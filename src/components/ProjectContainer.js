@@ -8,10 +8,19 @@ import work from "../assets/images/work-day-scheduler.png";
 
 const styles = {
   card: {
-    width: "25rem",
+    backgroundColor: "#c9a8f1",
   },
   image: {
     objectFit: "contain",
+  },
+  title: {
+    color: "#381155",
+    fontWeight: "bold",
+  },
+  button: {
+    backgroundColor: "#381155",
+    color: "#c9a8f1",
+    border: "none",
   },
 };
 
@@ -60,8 +69,10 @@ export default function ProjectContainer() {
     <div className="row row-cols-1 row-cols-md-2 g-4 w-75 p-3 mx-auto">
       {projects.map(({ name, image, repo, deploy }) => (
         <div className="col ">
-          <div className="card ">
-            <h5 className="card-title mx-auto my-2">{name}</h5>
+          <div className="card " style={styles.card}>
+            <h4 className="card-title mx-auto my-2" style={styles.title}>
+              {name}
+            </h4>
             <img
               src={image}
               className="card-img-top"
@@ -74,6 +85,7 @@ export default function ProjectContainer() {
                 className="btn btn-primary mx-auto"
                 target="_blank"
                 rel="noreferrer noopener"
+                style={styles.button}
               >
                 Deployed Application
               </a>
@@ -82,6 +94,7 @@ export default function ProjectContainer() {
                 className="btn btn-primary mx-auto"
                 target="_blank"
                 rel="noreferrer noopener"
+                style={styles.button}
               >
                 GitHub Repository
               </a>
