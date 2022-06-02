@@ -5,16 +5,19 @@ const styles = {
   avatar: {
     width: "100px",
   },
+  bio: {
+    fontSize: 20,
+  },
 };
 
 export default function AboutMe() {
   return (
     <div>
-      <h1>About Me</h1>
+      <h1 className="my-4 ms-5">About Me</h1>
       <div>
-        <img src={avatar} alt="" style={styles.avatar} />
+        <img src={avatar} alt="" style={styles.avatar} className="mb-4 ms-5" />
       </div>
-      <p>
+      <p className="ms-5 w-75" style={styles.bio}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
         velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
         ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
