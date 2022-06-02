@@ -6,11 +6,6 @@ export default function Portfolio() {
     <div>
       <h1>Portfolio</h1>
       <ProjectContainer />
-      <ProjectContainer />
-      <ProjectContainer />
-      <ProjectContainer />
-      <ProjectContainer />
-      <ProjectContainer />
     </div>
   );
 }
