@@ -8,6 +8,8 @@ import github from "../assets/images/github.png";
 import linkedin from "../assets/images/linkedin.png";
 import twitter from "../assets/images/twitter.png";
 
+document.body.style = "background: #381155";
+
 const styles = {
   icon: {
     width: 40,
@@ -15,10 +17,13 @@ const styles = {
   },
   footer: {
     textAlign: "center",
+    marginTop: 100,
   },
   page: {
-    backgroundColor: "#381155",
     color: "white",
+  },
+  header: {
+    backgroundColor: "#592575",
   },
 };
 
@@ -42,15 +47,13 @@ export default function PortfolioContainer() {
 
   return (
     <div style={styles.page}>
-      <header>
-        {/* We are passing the currentPage from state and the function to update it */}
+      <header style={styles.header}>
         <NavTabs
           currentPage={currentPage}
           handlePageChange={handlePageChange}
         />
-        {/* Here we are calling the renderPage function which will return a component  */}
-        {renderPage()}
       </header>
+      {renderPage()}
       <footer>
         <div style={styles.footer}>
           <img
