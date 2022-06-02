@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/react-employee-portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/react-employee-portfolio/static/js/main.b7973bcf.js",
-    "static/js/787.28cb0dcd.chunk.js": "/react-employee-portfolio/static/js/787.28cb0dcd.chunk.js",
-    "static/media/logo.svg": "/react-employee-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/react-employee-portfolio/static/css/main.e7720ab7.css",
+    "main.js": "/react-employee-portfolio/static/js/main.288aee69.js",
+    "static/media/doggo-meet-up.png": "/react-employee-portfolio/static/media/doggo-meet-up.cac65049dd583634e669.png",
+    "static/media/off-to-the-market.png": "/react-employee-portfolio/static/media/off-to-the-market.11ad36b65cade1080848.png",
+    "static/media/developer-portfolio.png": "/react-employee-portfolio/static/media/developer-portfolio.d1aa7cf4d980631fe0dd.png",
+    "static/media/weather-dashboard.png": "/react-employee-portfolio/static/media/weather-dashboard.9474f439374c84cb8c9a.png",
+    "static/media/work-day-scheduler.png": "/react-employee-portfolio/static/media/work-day-scheduler.d00c35d9475ee76b36ac.png",
+    "static/media/Resume.pdf": "/react-employee-portfolio/static/media/Resume.72c5fb2988632449cf18.pdf",
+    "static/media/password-generator.png": "/react-employee-portfolio/static/media/password-generator.bec8a65cb7dbd40c3449.png",
+    "static/media/avatar.png": "/react-employee-portfolio/static/media/avatar.36384898854ad3929a5f.png",
     "index.html": "/react-employee-portfolio/index.html",
-    "main.073c9b0a.css.map": "/react-employee-portfolio/static/css/main.073c9b0a.css.map",
-    "main.b7973bcf.js.map": "/react-employee-portfolio/static/js/main.b7973bcf.js.map",
-    "787.28cb0dcd.chunk.js.map": "/react-employee-portfolio/static/js/787.28cb0dcd.chunk.js.map"
+    "main.e7720ab7.css.map": "/react-employee-portfolio/static/css/main.e7720ab7.css.map",
+    "main.288aee69.js.map": "/react-employee-portfolio/static/js/main.288aee69.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.b7973bcf.js"
+    "static/css/main.e7720ab7.css",
+    "static/js/main.288aee69.js"
   ]
 }
