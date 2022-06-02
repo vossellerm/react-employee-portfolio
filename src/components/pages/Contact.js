@@ -52,9 +52,9 @@ export default function Contact() {
   return (
     <div>
       <h1>Contact</h1>
-      <div class="w-50 p-3">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">
+      <div className="w-50 p-3">
+        <div className="mb-3">
+          <label htmlFor="exampleFormControlInput1" className="form-label">
             Name
           </label>
           <input
@@ -62,13 +62,13 @@ export default function Contact() {
             name="name"
             onChange={handleInputChange}
             type="text"
-            class="form-control"
+            className="form-control"
             id="exampleFormControlInput1"
             placeholder="Name"
-          ></input>
+          />
         </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">
+        <div className="mb-3">
+          <label htmlFor="exampleFormControlInput1" className="form-label">
             Email address
           </label>
           <input
@@ -76,13 +76,13 @@ export default function Contact() {
             name="email"
             onChange={handleInputChange}
             type="email"
-            class="form-control"
+            className="form-control"
             id="exampleFormControlInput1"
             placeholder="name@example.com"
-          ></input>
+          />
         </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">
+        <div className="mb-3">
+          <label htmlFor="exampleFormControlTextarea1" className="form-label">
             Message
           </label>
           <textarea
@@ -90,15 +90,15 @@ export default function Contact() {
             name="message"
             onChange={handleInputChange}
             type="text"
-            class="form-control"
+            className="form-control"
             id="exampleFormControlTextarea1"
-            rows="3"
-          ></textarea>
+            rows={3}
+          />
         </div>
-        <div class="mb-3">
+        <div className="mb-3">
           <button
             type="submit"
-            class="btn btn-primary mb-3"
+            className="btn btn-primary mb-3"
             onClick={handleFormSubmit}
           >
             Submit
