@@ -2,11 +2,15 @@ import React, { useState } from "react";
 
 import { validateEmail } from "../../utils/helpers";
 
-export default function Contact() {
-  // check name input for valid entry (text), throw error/message to client
-  // check email input for valid entry (email), throw error/message to client
-  // check message input for valid entry (text), throw error/message to client
+const styles = {
+  button: {
+    backgroundColor: "#c9a8f1",
+    color: "#381155",
+    border: "none",
+  },
+};
 
+export default function Contact() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -51,8 +55,8 @@ export default function Contact() {
 
   return (
     <div>
-      <h1>Contact</h1>
-      <div className="w-50 p-3">
+      <h1 className="my-4 ms-5">Contact</h1>
+      <div className="w-50 ms-5">
         <div className="mb-3">
           <label htmlFor="exampleFormControlInput1" className="form-label">
             Name
@@ -100,6 +104,7 @@ export default function Contact() {
             type="submit"
             className="btn btn-primary mb-3"
             onClick={handleFormSubmit}
+            style={styles.button}
           >
             Submit
           </button>
