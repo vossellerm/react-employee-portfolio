@@ -4,6 +4,23 @@ import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
+import github from "../assets/images/github.png";
+import linkedin from "../assets/images/linkedin.png";
+import twitter from "../assets/images/twitter.png";
+
+const styles = {
+  icon: {
+    width: 40,
+    margin: 20,
+  },
+  footer: {
+    textAlign: "center",
+  },
+  page: {
+    backgroundColor: "#381155",
+    color: "white",
+  },
+};
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("AboutMe");
@@ -24,7 +41,7 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <div style={styles.page}>
       <header>
         {/* We are passing the currentPage from state and the function to update it */}
         <NavTabs
@@ -35,7 +52,32 @@ export default function PortfolioContainer() {
         {renderPage()}
       </header>
       <footer>
-        <h1>Footer</h1>
+        <div style={styles.footer}>
+          <img
+            src={github}
+            alt=""
+            href="https://github.com/vossellerm"
+            target="_blank"
+            rel="noreferrer noopener"
+            style={styles.icon}
+          />
+          <img
+            src={linkedin}
+            alt=""
+            href="https://www.linkedin.com/in/mikayla-vosseller-134b891a9/"
+            target="_blank"
+            rel="noreferrer noopener"
+            style={styles.icon}
+          />
+          <img
+            src={twitter}
+            alt=""
+            href="https://twitter.com/equivont"
+            target="_blank"
+            rel="noreferrer noopener"
+            style={styles.icon}
+          />
+        </div>
       </footer>
     </div>
   );
