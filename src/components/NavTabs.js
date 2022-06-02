@@ -2,21 +2,27 @@ import React from "react";
 
 const styles = {
   active: {
-    color: "red",
+    color: "white",
   },
   inactive: {
-    color: "blue",
+    color: "#C9A8F1",
   },
+  name: {
+    fontSize: 50
+  },
+  nav: {
+    fontSize: 30
+  }
 };
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
-        <h1 class="navbar-brand">Lernantino</h1>
+        <h1 class="navbar-brand" style={styles.name}>Lernantino</h1>
       </div>
-      <ul className="navbar-nav">
-        <li className="nav-item">
+      <ul className="navbar-nav" style={styles.nav}>
+        <li className="nav-item w-25 p-3">
           <a
             href="#aboutMe"
             onClick={() => handlePageChange("AboutMe")}
@@ -28,7 +34,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             About Me
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item w-25 p-3">
           <a
             href="#portfolio"
             onClick={() => handlePageChange("Portfolio")}
@@ -42,7 +48,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             Portfolio
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item w-25 p-3">
           <a
             href="#contact"
             onClick={() => handlePageChange("Contact")}
@@ -54,7 +60,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             Contact
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item w-25 p-3">
           <a
             href="#resume"
             onClick={() => handlePageChange("Resume")}

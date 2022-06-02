@@ -21,6 +21,7 @@ const styles = {
   },
   page: {
     color: "white",
+    fontFamily: "Serif",
   },
   header: {
     backgroundColor: "#592575",
